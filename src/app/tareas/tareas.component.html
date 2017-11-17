@@ -1,1 +1,13 @@
 <h2>Tareas</h2>
+
+<h4>Página de tareas.</h4> 
+
+<!-- [value]="tareas" var="tarea" [globalFilter]="gb" #dt selectionMode="single" (onRowSelect)="onSelect($event)">--> 
+<p-dataTable     
+   [value]="tareas" var="tarea" [globalFilter]="gb" #dt selectionMode="single"> 
+
+   <p-column field="descripcion" header="Tarea" [sortable]="true"></p-column> 
+   <p-column field="realizada" header="Realizada" [sortable]="true"></p-column> 
+
+ 
+</p-dataTable>

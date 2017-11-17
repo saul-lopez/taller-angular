@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MenubarModule } from 'primeng/primeng';
+import { MenubarModule, DataTableModule } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -8,6 +8,9 @@ import { TareasComponent } from './tareas/tareas.component';
 
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+
+import { HttpClientModule } from '@angular/common/http';
+import { TareasApiService } from './shared/tareas-api.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,13 @@ import { ROUTES } from './app.routes';
   imports: [
     BrowserModule,
     MenubarModule,
+    DataTableModule,
     RouterModule.forRoot(ROUTES),
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    TareasApiService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
