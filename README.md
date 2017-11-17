@@ -1,6 +1,23 @@
-# TallerAngular
+# Taller Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.1.
+Este proyecto fue generado usando [Angular CLI](https://github.com/angular/angular-cli) version 1.5.1.
+
+# Usar el proyecto
+Para poder usar el proyecto, es necesario descargar una copia al equipo local con el siguiente comando (Ejecutarlo en Git bash):
+```
+cd angular
+git clone https://github.com/saul-lopez/taller-angular.git
+```
+Instalar los paquetes necesarios:
+```
+npm install
+```
+Finalmente, iniciar el servidor local:
+```
+ng serve
+```
+
+# Readme original
 
 ## Development server
 
