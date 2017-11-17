@@ -3,13 +3,14 @@
 Este proyecto fue generado usando [Angular CLI](https://github.com/angular/angular-cli) version 1.5.1.
 
 # Usar el proyecto
-Para poder usar el proyecto, es necesario descargar una copia al equipo local con el siguiente comando (Ejecutarlo en Git bash):
+Para poder usar el proyecto, es necesario descargar una copia al equipo local con el siguiente comando (Ejecutarlo en Git bash). Para no afectar el proyecto que cada participante creó en clase, renombrar su directorio o clonar el presente proyecto en un directorio distinto.
 ```
 cd angular
 git clone https://github.com/saul-lopez/taller-angular.git
 ```
 Instalar los paquetes necesarios:
 ```
+cd taller-angular
 npm install
 ```
 Finalmente, iniciar el servidor local:
